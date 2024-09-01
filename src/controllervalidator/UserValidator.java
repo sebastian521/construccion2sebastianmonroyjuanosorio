@@ -8,5 +8,7 @@ public class UserValidator extends CommonsValidator {
     public void validRole(String Role) throws Exception{
         super.isValidString("El Rol Del Usuario", Role);
     }
-    
+    public void validPassword(String password) throws Exception{
+        super.isValidString("la contraseña", password);
+    }
 }

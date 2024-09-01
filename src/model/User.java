@@ -3,23 +3,24 @@ package model;
 
 public class User {
     
-    private long UserId;
+    private long ID;
     private String UserName;
     private String Password;
     private String Role; 
-    private Person person;
+    private Person personID;
     
     public User(){
         
     }
 
-    public long getUserId() {
-        return UserId;
+    public long getID() {
+        return ID;
     }
 
-    public void setUserId(long UserId) {
-        this.UserId = UserId;
+    public void setID(long ID) {
+        this.ID = ID;
     }
+
 
     public String getUserName() {
         return UserName;
@@ -45,14 +46,15 @@ public class User {
         this.Role = Role;
     }
 
-    public Person getPerson() {
-        return person;
+    public Person getPersonID() {
+        return personID;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
+    public void setPersonID(Person personID) {
+        this.personID = personID;
     }
 
+    
     
     
     }

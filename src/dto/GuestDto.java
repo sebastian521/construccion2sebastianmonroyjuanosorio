@@ -3,39 +3,48 @@ package dto;
 
 
 public class GuestDto {
-    private int registrationId;
-    private long PartnerId;
-    private boolean InvitationStatus;
+    
+    private long Id;
+    private boolean Status;
+    private UserDto user;
+    private PartnerDto Partner;
 
-    public GuestDto(int registrationId, long PartnerId, boolean InvitationStatus) {
-        this.registrationId = registrationId;
-        this.PartnerId = PartnerId;
-        this.InvitationStatus = InvitationStatus;
+    public GuestDto(){
     }
 
-    public int getRegistrationId() {
-        return registrationId;
+    public UserDto getUser() {
+        return user;
     }
 
-    public void setRegistrationId(int registrationId) {
-        this.registrationId = registrationId;
+    public void setUser(UserDto user) {
+        this.user = user;
     }
 
-    public long getPartnerId() {
-        return PartnerId;
+    public PartnerDto getPartner() {
+        return Partner;
     }
 
-    public void setPartnerId(long PartnerId) {
-        this.PartnerId = PartnerId;
+    public void setPartner(PartnerDto Partner) {
+        this.Partner = Partner;
     }
 
-    public boolean isInvitationStatus() {
-        return InvitationStatus;
+    public long getId() {
+        return Id;
     }
 
-    public void setInvitationStatus(boolean InvitationStatus) {
-        this.InvitationStatus = InvitationStatus;
+    public void setId(long Id) {
+        this.Id = Id;
     }
+
+    public boolean isStatus() {
+        return Status;
+    }
+
+    public void setStatus(boolean Status) {
+        this.Status = Status;
+    }
+
+    
     
     
 }

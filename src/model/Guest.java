@@ -3,46 +3,48 @@ package model;
  
 
 public class Guest { 
-    private int registrationId;
-    private long Id;
-    private boolean InvitationStatus;
-    private Person person;
+    private User user;
+    private long ID;
+    private String Status;
+    private Partner partner;
 
     public Guest(){
         
     }
-    
-    public int getRegistrationId() {
-        return registrationId;
+
+    public User getUser() {
+        return user;
     }
 
-    public void setRegistrationId(int registrationId) {
-        this.registrationId = registrationId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public long getId() {
-        return Id;
+        return ID;
     }
 
     public void setId(long Id) {
-        this.Id = Id;
+        this.ID = Id;
     }
 
-    public boolean isInvitationStatus() {
-        return InvitationStatus;
+    public String getStatus() {
+        return Status;
     }
 
-    public void setInvitationStatus(boolean InvitationStatus) {
-        this.InvitationStatus = InvitationStatus;
+    public void setStatus(String Status) {
+        this.Status = Status;
     }
 
-    public Person getPerson() {
-        return person;
+    public Partner getPartner() {
+        return partner;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
+    public void setPartner(Partner partner) {
+        this.partner = partner;
     }
+    
+    
 
     
 

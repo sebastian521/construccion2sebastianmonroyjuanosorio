@@ -9,7 +9,7 @@ public class PartnerValidator extends CommonsValidator{
         return super.isValidDouble("La Cantidad De La Factura", money);
         }
     
-    public void validSuscriptionType(String suscriptiontype) throws Exception{
-        super.isValidString("El Tipo De Suscripción", suscriptiontype);
+    public void validType(String type) throws Exception{
+        super.isValidString("El Tipo De Suscripción", type);
     }
 }

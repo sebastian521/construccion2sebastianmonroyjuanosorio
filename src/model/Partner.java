@@ -1,50 +1,51 @@
 package model;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 
 
 public class Partner{
-    private long RegistrationId; 
-    private double AvailableFunds;
-    private String SuscriptionType;
-    private Date AffiliationDate; 
+    private long ID;
+    private String Type;
+    private Timestamp DateCreated;
     private double money;
-
+    private User UserID;
+    
     public Partner(){
         
     }
-    
-    public long getRegistrationId() {
-        return RegistrationId;
+
+    public long getID() {
+        return ID;
     }
 
-    public void setRegistrationId(long RegistrationId) {
-        this.RegistrationId = RegistrationId;
+    public void setID(long ID) {
+        this.ID = ID;
     }
 
-    public double getAvailableFunds() {
-        return AvailableFunds;
+    public User getUserID() {
+        return UserID;
     }
 
-    public void setAvailableFunds(double AvailableFunds) {
-        this.AvailableFunds = AvailableFunds;
+    public void setUserID(User UserID) {
+        this.UserID = UserID;
+    }    
+
+    public String getType() {
+        return Type;
     }
 
-    public String getSuscriptionType() {
-        return SuscriptionType;
+    public void setType(String Type) {
+        this.Type = Type;
     }
 
-    public void setSuscriptionType(String SuscriptionType) {
-        this.SuscriptionType = SuscriptionType;
+    public Timestamp getDateCreated() {
+        return DateCreated;
     }
 
-    public Date getAffiliationDate() {
-        return AffiliationDate;
+    public void setDateCreated(Timestamp DateCreated) {
+        this.DateCreated = DateCreated;
     }
 
-    public void setAffiliationDate(Date AffiliationDate) {
-        this.AffiliationDate = AffiliationDate;
-    }
 
     public double getMoney() {
         return money;

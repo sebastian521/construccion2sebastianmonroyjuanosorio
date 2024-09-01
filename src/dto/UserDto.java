@@ -2,20 +2,22 @@
 package dto;
 
 public class UserDto extends PersonDto{  
-    private long UserId;
+    private long ID;
     private String UserName;
     private String Password;
     private String Role;
+    private PersonDto personId;
+            
 
     public UserDto() {
     }
 
-    public long getUserId() {
-        return UserId;
+    public long getID() {
+        return ID;
     }
 
-    public void setUserId(long UserId) {
-        this.UserId = UserId;
+    public void setID(long ID) {
+        this.ID = ID;
     }
 
     public String getUserName() {
@@ -41,6 +43,15 @@ public class UserDto extends PersonDto{
     public void setRole(String Role) {
         this.Role = Role;
     }
+
+    public PersonDto getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(PersonDto personId) {
+        this.personId = personId;
+    }
+
     
     
 

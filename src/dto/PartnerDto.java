@@ -1,47 +1,59 @@
 package dto;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 public class PartnerDto extends PersonDto {
-    private long RegistrationId; 
-    private double AvailableFunds;
-    private String SuscriptionType;
-    private Date AffiliationDate;
+    private long ID; 
+    private double money;
+    private String Type;
+    private UserDto UserId;
+    private Timestamp datecreated;
+    
 
     public PartnerDto() {
     }
+
+    public long getID() {
+        return ID;
+    }
+
+    public void setID(long ID) {
+        this.ID = ID;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void setMoney(double money) {
+        this.money = money;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String Type) {
+        this.Type = Type;
+    }
+
+    public UserDto getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(UserDto UserId) {
+        this.UserId = UserId;
+    }
+
+    public Timestamp getDatecreated() {
+        return datecreated;
+    }
+
+    public void setDatecreated(Timestamp datecreated) {
+        this.datecreated = datecreated;
+    }
     
-    public long getRegistrationId() {
-        return RegistrationId;
-    }
-
-    public void setRegistrationId(long RegistrationId) {
-        this.RegistrationId = RegistrationId;
-    }
-
-    public double getAvailableFunds() {
-        return AvailableFunds;
-    }
-
-    public void setAvailableFunds(double AvailableFunds) {
-        this.AvailableFunds = AvailableFunds;
-    }
-
-    public String getSuscriptionType() {
-        return SuscriptionType;
-    }
-
-    public void setSuscriptionType(String SuscriptionType) {
-        this.SuscriptionType = SuscriptionType;
-    }
-
-    public Date getAffiliationDate() {
-        return AffiliationDate;
-    }
-
-    public void setAffiliationDate(Date AffiliationDate) {
-        this.AffiliationDate = AffiliationDate;
-    }
+    
 
    
     

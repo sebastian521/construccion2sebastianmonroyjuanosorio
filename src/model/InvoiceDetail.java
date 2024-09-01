@@ -3,15 +3,14 @@ package model;
 
 public class InvoiceDetail {
     private long Id;
-    private int Item;
-    private double amount;
-    private Invoice Invoice;
-    private String Description;
+    private User user;
+    private Partner partner;
+    private String Status;
 
     public InvoiceDetail(){
         
     }
-    
+
     public long getId() {
         return Id;
     }
@@ -20,37 +19,31 @@ public class InvoiceDetail {
         this.Id = Id;
     }
 
-    public int getItem() {
-        return Item;
+    public User getUser() {
+        return user;
     }
 
-    public void setItem(int Item) {
-        this.Item = Item;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public double getAmount() {
-        return amount;
+    public Partner getPartner() {
+        return partner;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setPartner(Partner partner) {
+        this.partner = partner;
     }
 
-    public Invoice getInvoice() {
-        return Invoice;
+    public String getStatus() {
+        return Status;
     }
 
-    public void setInvoice(Invoice Invoice) {
-        this.Invoice = Invoice;
+    public void setStatus(String Status) {
+        this.Status = Status;
     }
-
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String Description) {
-        this.Description = Description;
-    }
+    
+    
     
     
 }
